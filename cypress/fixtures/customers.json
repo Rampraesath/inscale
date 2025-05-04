@@ -1,0 +1,16 @@
+{
+    "allCustomers": [
+      { "firstName": "Christopher", "lastName": "Connely", "postcode": "L789C349" },
+      { "firstName": "Frank", "lastName": "Christopher", "postcode": "A897N450" },
+      { "firstName": "Christopher", "lastName": "Minka", "postcode": "M098Q585" },
+      { "firstName": "Connely", "lastName": "Jackson", "postcode": "L789C349" },
+      { "firstName": "Jackson", "lastName": "Frank", "postcode": "L789C349" },
+      { "firstName": "Minka", "lastName": "Jackson", "postcode": "A897N450" },
+      { "firstName": "Jackson", "lastName": "Connely", "postcode": "L789C349" }
+    ],
+    "customersToDelete": [
+      { "firstName": "Jackson", "lastName": "Frank", "postcode": "L789C349" },
+      { "firstName": "Christopher", "lastName": "Connely", "postcode": "L789C349" }
+    ]
+  }
+  
