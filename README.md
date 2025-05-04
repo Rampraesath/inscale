@@ -1,70 +1,85 @@
-🧪 Cypress Test Automation Framework
+# Cypress Test Automation Framework
 
 This repository contains an end-to-end testing framework built with Cypress for automating test flows in a sample banking application.
 
-📁 Project Structure
+## Project Structure
+
+```bash
 
 ├── cypress
 │   ├── e2e
-│   │   └── hermoineTransactionTest.cy.js   # Main test suite
+│   │   └── question-1.cy.js   # Test case for question 1
+│   │   └── question-2.cy.js   # Test case for question 2
 │   ├── fixtures
-│   │   └── transactions.json               # Test data for transactions
+│   │   └── customers.json      # Test data for question 1
+│   │   └── transactions.json   # Test data for question 2
 │   ├── support
-│   │   ├── commands.js                     # Custom Cypress commands
-│   │   └── pageObjects
-│   │       ├── CustomerPage.js            # Page Object Model for customer UI
-│   │       └── BankManagerPage.js         # Page Object Model for manager UI
-├── cypress.config.js                      # Cypress configuration file
-└── README.md                              # Project documentation
+│   │   ├── commands.js         # Custom Cypress commands
+│   │   └── page-objects
+│   │       ├── customerPage.js  # Page Object Model for customer UI
+│   │       └── bankManagerPage.js # Page Object Model for manager UI
+├── cypress.config.js           # Cypress configuration file
+└── README.md                   # Project documentation
+```
 
-✅ Features
+## Features
+- [x] <span style="color:limegreen"> Page Object Model (POM) for modularity and reusability </span>
 
-Page Object Model (POM) for modularity and reusability
+- [x] <span style="color:limegreen"> Custom Cypress commands for better abstraction </span>
 
-Custom Cypress commands for better abstraction
+- [x] <span style="color:limegreen"> Data-driven testing using fixtures </span>
 
-Data-driven testing using fixtures
+- [x] <span style="color:limegreen"> DOM interaction validations (add, delete, balance, etc.) </span>
 
-DOM interaction validations (add, delete, balance, etc.)
 
-🔧 Setup Instructions
+## Setup Instructions
 
-Install dependencies
+1. Install dependencies
 
-npm install
+2. npm install
 
-Run Cypress Test Runner
+3. Run Cypress Test Runner
 
-npx cypress open
+4. npx cypress open
 
-Run tests in headless mode
+5. Run tests in headless mode
 
-npx cypress run
+6. npx cypress run
 
-📌 Custom Commands
+## Custom Commands
 
 Custom commands are defined in cypress/support/commands.js:
 
-addCustomer(customer)
+- addCustomer(customer)
 
-deleteCustomer(customer)
+- deleteCustomer(customer)
 
-verifyCustomerInTable(customer)
+- verifyCustomerInTable(customer)
 
-clickAddCustomerHeader()
+- clickAddCustomerHeader()
 
-loginAsCustomer(name, accountNo)
+- loginAsCustomer(name, accountNo)
 
-performTransactionAndAssert(type, amount)
+- performTransactionAndAssert(type, amount)
 
-📚 Page Objects
+##  Page Objects
 
 Defined under cypress/support/pageObjects/:
 
-BankManagerPage.js → Handles bank manager elements and actions
+- BankManagerPage.js → Handles bank manager elements and actions
 
-CustomerPage.js → Handles customer login, selection, and transactions
+- CustomerPage.js → Handles customer login elements and actions
 
-📄 Test Data
+##  Test Data
 
-Transaction data for Hermoine Granger is stored in cypress/fixtures/transactions.json and used for verifying multiple deposit and withdrawal flows.
+- Transaction data for Question 1 is stored in cypress/fixtures/customers.json and used for creating and deleting customers
+- Transaction data for Question 2 is stored in cypress/fixtures/transactions.json and used for verifying multiple deposit and withdrawal flows
+
+
+
+
+
+
+
+
+
